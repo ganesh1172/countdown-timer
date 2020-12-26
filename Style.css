@@ -6,3 +6,69 @@
     box-sizing: border-box;
     font-family: 'Red Hat Text', sans-serif;
 }
+
+body{
+    background-image: url(./images/bg-stars.svg);
+    background-size: cover;
+    background-color: hsl(235, 16%, 14%);
+    /* background: linear-gradient(to bottom, hsl(234, 17%, 12%) 10%, hsl(235, 16%, 14%) 60% , hsl(236, 21%, 26%) 40%); */
+}
+
+.container{
+    width: 100%;
+    /* background-color: #fff; */
+}
+
+.ct-content{
+    width: 50%;
+    height: 20%;
+    border: 1px solid #ffffff;
+    margin: 10rem auto;
+}
+.ct-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+.s-media{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.s-media img{
+    width: 100vw;
+    height: 25vh;
+    background-size: cover;
+}
+
+.s-icons{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.fa-facebook-square, .fa-pinterest, .fa-instagram{
+    font-size: 1.2rem;
+    color:hsl(237, 18%, 59%);
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.fa-facebook-square:hover, .fa-pinterest:hover, .fa-instagram:hover{
+    color: hsl(345, 95%, 68%);
+}
+
+@media only screen and (max-width: 375px) {
+
+    .s-icons{
+        top: 50%;
+        left: 40%;
+    }
+
+    .fa-facebook-square, .fa-pinterest, .fa-instagram{
+        font-size: 1.4rem;
+        margin: 0 0.2rem;
+    }
+}
